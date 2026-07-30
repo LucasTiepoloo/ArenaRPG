@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>⚔️ Arena RPG — Batalha de Heróis</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>⚔️ Arena RPG</h1>
+    <p>Escolha dois combatentes e veja quem sobrevive!</p>
+  </header>
+
+  <main>
+    <!-- Coluna do lutador 1 -->
+    <section class="lado" id="lado-1">
+      <h2>Lutador 1</h2>
+      <select id="select-1"></select>
+      <div class="ficha" id="ficha-1"></div>
+    </section>
+
+    <!-- Centro: botão de batalha -->
+    <section class="centro">
+      <button id="btn-batalhar">BATALHAR!</button>
+      <div id="vencedor"></div>
+    </section>
+
+    <!-- Coluna do lutador 2 -->
+    <section class="lado" id="lado-2">
+      <h2>Lutador 2</h2>
+      <select id="select-2"></select>
+      <div class="ficha" id="ficha-2"></div>
+    </section>
+  </main>
+
+  <!-- Log da batalha (turno a turno) -->
+  <section id="log-batalha">
+    <h2>📜 Registro da batalha</h2>
+    <ul id="log"></ul>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
